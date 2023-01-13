@@ -111,6 +111,7 @@ public class PathOptimizerServiceImpl implements PathOptimizerService {
 							&& distances[i] > distances[elementIndex] + Constants.CONNECTIONS[elementIndex][i]) {
 						distances[i] = distances[elementIndex] + Constants.CONNECTIONS[elementIndex][i];
 						predecesors[i] = elementIndex;
+						//ToDo: Possible performance improvement. Check if the same city is being added multiple times.
 						list.add(new Node(i, distances[i]));
 					}
 				}
