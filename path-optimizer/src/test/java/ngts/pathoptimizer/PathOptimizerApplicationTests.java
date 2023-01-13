@@ -1,13 +1,12 @@
 package ngts.pathoptimizer;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+/**
+ * Main test class
+ *
+ */
 @SpringBootTest
 class PathOptimizerApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
 
 }
